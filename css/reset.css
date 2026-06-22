@@ -1,0 +1,251 @@
+/*=======================
+        General 
+=======================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--default-font-family);
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--default-font-family);
+    color: var(--color-foreground);
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.625;
+    color: var(--muted-foreground);
+    margin: 0 0 16px;
+
+}
+p:last-child {
+    margin-bottom: 0;
+}
+h1,
+h2,
+
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.33;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/*=======================
+       Page Layout
+=======================*/
+:root {
+    --background: lab(100% 0 0);
+    --foreground: lab(5.05444% .548713 -13.3291);
+    --card: lab(100% 0 0);
+    --card-foreground: lab(5.05444% .548713 -13.3291);
+    --popover: lab(100% 0 0);
+    --popover-foreground: lab(5.05444% .548713 -13.3291);
+    --primary: lab(77.6357% 25.6891 70.1616);
+    --primary-foreground: lab(9.15714% 1.01471 -17.6419);
+    --secondary: lab(96.4879% -.519067 -3.73547);
+    --secondary-foreground: lab(9.15714% 1.01471 -17.6419);
+    --muted: lab(95.3346% -.419974 -2.99106);
+    --muted-foreground: lab(41.8783% -1.09747 -10.9887);
+    --accent: lab(95.4544% 2.6814 15.3591);
+    --accent-foreground: lab(9.15714% 1.01471 -17.6419);
+    --destructive: lab(51.4033% 69.2672 48.7132);
+    --destructive-foreground: lab(98.84% .0000298023 -.0000119209);
+    --border: lab(90.6878% -.517368 -3.73452);
+    --input: lab(90.6878% -.517368 -3.73452);
+    --ring: lab(77.6357% 25.6891 70.1616);
+    --brand-navy: lab(8.97485% 1.77392 -24.0112);
+    --brand-navy-deep: lab(4.10011% 1.52928 -18.9967);
+    --brand-navy-soft: lab(16.0352% -.0205189 -24.1654);
+    --brand-gold: lab(80.1318% 21.3277 71.8456);
+    --brand-gold-deep: lab(69.1% 36.2899 72.2821);
+    --brand-cream: lab(96.5967% .633419 7.66813);
+    --party-labour: lab(45.8049% 62.9533 44.1);
+    --party-conservative: lab(35.3532% -3.40524 -51.3924);
+    --party-reform: lab(60.2421% -34.459 -29.3329);
+    --chart-1: lab(57.1026% 64.2584 89.8886);
+    --chart-2: lab(55.0223% -41.0774 -3.90277);
+    --chart-3: lab(30.372% -13.1853 -18.7887);
+    --chart-4: lab(80.1641% 16.6016 99.2089);
+    --chart-5: lab(72.7183% 31.8672 97.9407);
+    --sidebar: lab(98.1434% -.369519 -1.05966);
+    --sidebar-foreground: lab(1.76974% 1.32743 -9.28855);
+    --sidebar-primary: lab(7.78673% 1.82345 -15.0537);
+    --sidebar-primary-foreground: lab(98.1434% -.369519 -1.05966);
+    --sidebar-accent: lab(96.286% -.852436 -2.46847);
+    --sidebar-accent-foreground: lab(7.78673% 1.82345 -15.0537);
+    --sidebar-border: lab #e2e8f0 (91.7353% -.998765 -4.76968);
+    --sidebar-ring: lab(65.5349% -2.25151 -14.5072);
+
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-slate-50: #f8fafc;
+    --color-slate-600: #45556c;
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: .25rem;
+    
+    --text-xs: .75rem;
+    --text-xs--line-height: calc(1 / .75);
+    --text-sm: .875rem;
+    --text-sm--line-height: calc(1.25 / .875);
+    --text-base: 1rem;
+    --text-base--line-height: 1.5;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: 1.2;
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+    --tracking-tight: -.025em;
+    --tracking-wide: .025em;
+    --tracking-wider: .05em;
+    --tracking-widest: .1em;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-relaxed: 1.625;
+    --ease-in-out: cubic-bezier(.4, 0, .2, 1);
+    --animate-pulse: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+    --aspect-video: 16 / 9;
+    --default-transition-duration: .15s;
+    --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-border: var(--border);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1.5rem;
+}
+ .section-heading {
+  	font-size: 0.75rem;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	letter-spacing: 0.18em;
+  	color: var(--brand-gold-deep);
+  	line-height: 1.33;
+    margin-bottom:0;
+  }
+
+  .section-title {
+  	margin-top: 0.5rem;
+  	font-size: 1.875rem;
+  	font-weight: 900;
+  	letter-spacing: -0.025em;
+  	color: var(--foreground);
+  	line-height: 1.33;
+  }
+.hidden {
+    display: none !important;
+}
+
+@media(min-width: 1024px) {
+
+    .hide-pc-header {
+
+        display: none !important;
+
+    }
+
+}
+
+@media(min-width: 768px) {
+
+    .hide-pc {
+
+        display: none !important;
+
+    }
+
+}
+
+
+
+@media(max-width: 767px) {
+
+    .hide-mb {
+
+        display: none !important;
+
+    }
+
+}
