@@ -22,24 +22,13 @@
     <header id="site-header" class="header">
         <div class="header-inner">
             <a href="/" class="logo">
-                <span class="logo-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        aria-hidden="true">
-                        <path d="M12 3v18" />
-                        <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" />
-                        <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" />
-                        <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" />
-                        <path d="M7 21h10" />
-                    </svg>
-                </span>
-                <span class="logo-text">Compare<br>Policies</span>
+                <img src="./assets/images/Logo_compare_policies.png" alt="Compare Policies">
             </a>
 
             <div class="header-right">
                 <nav>
                     <ul>
-                        <li><a href="/about">About us</a></li>
+                        <li><a href="/about" class="current-menu-item" aria-current="page">About us</a></li>
                         <li><a href="/insights">Insights</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
@@ -80,12 +69,12 @@
                     <div class="about-hero__media">
                         <div class="about-hero__media-frame">
                             <div class="about-hero__img about-hero__img--main">
-                                <img src="/assets/images/about-westminster-BgsL-rMj.jpg"
+                                <img src="./assets/images/about-westminster-BgsL-rMj.jpg"
                                     alt="The Palace of Westminster at golden hour" width="1024" height="1280">
                             </div>
                             <div class="about-hero__img about-hero__img--secondary">
                                 <div class="about-hero__img-inner">
-                                    <img src="/assets/images/about-lords-BUiAMKQG.jpg"
+                                    <img src="./assets/images/about-lords-BUiAMKQG.jpg"
                                         alt="Interior of the House of Lords chamber" width="1024" height="1280"
                                         loading="lazy">
                                 </div>
@@ -98,6 +87,206 @@
 
             </div>
         </section>
+        <section class="trust-pledge">
+            <div class="container">
+                <div class="trust-pledge__head">
+                    <p class="trust-pledge__eyebrow section-eyebrow">The Trust Pledge</p>
+                    <h2 class="trust-pledge__title section-title">Our Core Commitments to UK Voters</h2>
+                </div>
+
+                <div class="trust-pledge__grid">
+
+                    <article class="pledge-card">
+                        <span class="pledge-card__bar" aria-hidden="true"></span>
+                        <span class="pledge-card__icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                </path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                        </span>
+                        <h3 class="pledge-card__title">100% Non-Partisan</h3>
+                        <p class="pledge-card__text">We do not endorse any political party, candidate, or campaign. We
+                            are completely independent and receive no political funding.</p>
+                    </article>
+
+                    <article class="pledge-card">
+                        <span class="pledge-card__bar" aria-hidden="true"></span>
+                        <span class="pledge-card__icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6">
+                                </path>
+                                <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                                <path d="m14 20 2 2 4-4"></path>
+                            </svg>
+                        </span>
+                        <h3 class="pledge-card__title">Facts Over Rhetoric</h3>
+                        <p class="pledge-card__text">We strip away the media spin, emotional slogans, and political
+                            jargon. You only get verified, straightforward policy comparisons.</p>
+                    </article>
+
+                    <article class="pledge-card">
+                        <span class="pledge-card__bar" aria-hidden="true"></span>
+                        <span class="pledge-card__icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z">
+                                </path>
+                                <path
+                                    d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1">
+                                </path>
+                            </svg>
+                        </span>
+                        <h3 class="pledge-card__title">Community Feedback</h3>
+                        <p class="pledge-card__text">We run on accuracy. If you spot an issue, we welcome your feedback
+                            to rectify it instantly.</p>
+                        <a href="mailto:contact@comparepolicies.uk" class="pledge-card__link">
+                            Report Correction
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <section class="data-sources">
+            <div class="container">
+                <div class="data-sources__head">
+                    <p class="data-sources__eyebrow section-eyebrow">Verified Data Sources</p>
+                    <h2 class="data-sources__title section-title">Where Does Our Data Come From?</h2>
+                    <p class="data-sources__intro">To maintain radical transparency, we strictly cross-reference and
+                        extract data directly from public primary sources:</p>
+                </div>
+
+                <div class="data-sources__grid">
+
+                    <a href="https://www.electoralcommission.org.uk/" target="_blank" rel="noopener noreferrer"
+                        class="source-card">
+                        <div class="source-card__head">
+                            <span class="source-card__icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M10 18v-7"></path>
+                                    <path
+                                        d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z">
+                                    </path>
+                                    <path d="M14 18v-7"></path>
+                                    <path d="M18 18v-7"></path>
+                                    <path d="M3 22h18"></path>
+                                    <path d="M6 18v-7"></path>
+                                </svg>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="source-card__external" aria-hidden="true">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="source-card__title">The UK Electoral Commission</h3>
+                        <p class="source-card__text">Official election guidelines, compliance, and party registrations.
+                        </p>
+                    </a>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="source-card">
+                        <div class="source-card__head">
+                            <span class="source-card__icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z">
+                                    </path>
+                                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                                    <path d="M10 9H8"></path>
+                                    <path d="M16 13H8"></path>
+                                    <path d="M16 17H8"></path>
+                                </svg>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="source-card__external" aria-hidden="true">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="source-card__title">Official 2026 Manifestos</h3>
+                        <p class="source-card__text">Direct, unedited publications from Labour, Conservative, and Reform
+                            UK.</p>
+                    </a>
+
+                    <a href="https://hansard.parliament.uk/" target="_blank" rel="noopener noreferrer"
+                        class="source-card">
+                        <div class="source-card__head">
+                            <span class="source-card__icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m16 6 4 14"></path>
+                                    <path d="M12 6v14"></path>
+                                    <path d="M8 8v12"></path>
+                                    <path d="M4 4v16"></path>
+                                </svg>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="source-card__external" aria-hidden="true">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="source-card__title">UK Parliament Public Records</h3>
+                        <p class="source-card__text">Official Hansard transcripts and government white papers.</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <section id="cta" class="final-cta">
+            <div class="container final-cta__inner">
+                <h2 class="final-cta__title">Ready to explore the data?</h2>
+                <p class="final-cta__text">Dive straight into the side-by-side comparison tool, or read deeper analysis
+                    from our editorial team.</p>
+
+                <div class="final-cta__actions">
+                    <a href="/#compare" class="btn btn-gold">
+                        Compare Policies Now
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M12 5v14"></path>
+                            <path d="m19 12-7 7-7-7"></path>
+                        </svg>
+                    </a>
+                    <a href="/insights" class="final-cta__link">
+                        or read our latest Policy Insights
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer" id="site-footer" role="contentinfo">
@@ -105,20 +294,9 @@
             <div class="site-footer__top">
 
                 <div class="site-footer__brand">
-                    <div class="site-footer__logo">
-                        <span class="site-footer__logo-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" aria-hidden="true">
-                                <path d="M12 3v18"></path>
-                                <path d="m19 8 3 8a5 5 0 0 1-6 0zV7"></path>
-                                <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"></path>
-                                <path d="m5 8 3 8a5 5 0 0 1-6 0zV7"></path>
-                                <path d="M7 21h10"></path>
-                            </svg>
-                        </span>
-                        <span class="site-footer__logo-text">Compare<br>Policies</span>
-                    </div>
+                    <a href="/" class="site-footer__logo">
+                        <img src="./assets/images/Logo_compare_policies.png" alt="">
+                    </a>
                     <p class="site-footer__tagline">Independent, neutral side-by-side comparison of UK party policies.
                         No ads. No donors. No spin.</p>
                 </div>
