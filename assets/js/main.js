@@ -122,9 +122,43 @@ function main() {
 					}
 				});
 			}
+			const topicSelect = document.getElementById('contact-topic');
+			const sourceGroup = document.getElementById('sourceGroup');
+			const sourceInput = document.getElementById('contact-source');
 
+			if (topicSelect && sourceGroup) {
+				topicSelect.addEventListener('change', () => {
+					const isReportTopic = topicSelect.value === 'report';
+
+					if (isReportTopic) {
+						sourceGroup.style.display = 'flex';
+						sourceInput.required = true;
+						sourceGroup.classList.remove('contact-form__group--conditional');
+						void sourceGroup.offsetWidth; 
+						sourceGroup.classList.add('contact-form__group--conditional');
+					} else {
+						sourceGroup.style.display = 'none';
+						sourceInput.required = false;
+					}
+				});
+			}
 			
+			document.querySelectorAll('a[href^="#"]').forEach((link) => {
+				link.addEventListener('click', (e) => {
+					const href = link.getAttribute('href');
 
+					if (href === '#') return;
+
+					const targetId = href.slice(1);
+					const targetEl = document.getElementById(targetId);
+
+					if (targetEl) {
+						e.preventDefault();
+						targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+						history.pushState(null, '', href);
+					}
+				});
+			});
 		});
 
 
